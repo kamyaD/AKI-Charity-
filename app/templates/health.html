@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% load static %}
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>AKI Charity</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/animate.css/animate.min.css' %}"  rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Company
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/company-free-html-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="{% url 'index' %}"><span>AKI</span> Charity Kenya</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a href="{% url 'index' %}">Home</a></li>
+
+          <li class="dropdown"><a href="#"><span>About</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="{% url 'about' %}" class="active">About</a></li>
+              <!-- <li><a href="{% url 'team' %}">Team</a></li> -->
+              <!-- <li><a href="{% url 'testimonials' %}">Testimonials</a></li> -->
+              <li class="dropdown"><a href="#"><span>Our Projects</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="{% url 'education' %}">Education and transformation</a></li>
+                  <li><a href="{% url 'health' %}">Health and social change</a></li>
+                  <li><a href="{% url 'economic' %}">Economic strengthing</a></li>
+                  <li><a href="{% url 'conflict' %}">Conflict Management</a></li>
+                  <li><a href="{% url 'climate' %}">Climate Justice Advocacy</a></li>
+                  <li><a href="{% url 'partnerships' %}">Partnerships and Voluntarism</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <!-- <li><a href="{% url 'services' %}">Services</a></li> -->
+          <!-- <li><a href="portfolio.html">Portfolio</a></li> -->
+          <!-- <li><a href="pricing.html">Pricing</a></li> -->
+          <li><a href="{% url 'blog' %}">Blog</a></li>
+          <li><a href="{% url 'contact' %}">Contact</a></li>
+
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <div class="header-social-links d-flex">
+        <a href="#" class="twitter"><i class="bu bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bu bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bu bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bu bi-linkedin"></i></i></a>
+      </div>
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Health</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Health</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about-us" class="about-us">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row content">
+          <div class="col-lg-12" data-aos="carousel-fade">
+            <h2><center>Health</center></h2>
+            <!-- <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assum perenda sruen jonee trave</h3> -->
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
+            <img src="{% static 'assets/img/local/edit22.jpg' %}" alt="Image 1" style="max-width: 100%;">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-right">
+            <p>
+                AKI Charities is committed to partner with other institutions in ending AIDS as a public health threat and addressing all forms of Sexual and Gender- Based Violence (SGBV). In addition, the organization is determined to address the challenge of adolescent pregnancies in the areas of operation. Through partnership with government entities, and other bodies to develop AKI Charities shall implement strategies for eliminating the triple threat; sexual gender-based violence, pregnancies and HIV among adolescents and young people.
+
+              </p>
+              <h5>HIV/AIDS</h5>
+          <p>
+            Globally, HIV is among the leading causes of death among adolescents. it remains a major public health threat for adolescents and young people in Kenya. Misita village one of villages in homabay county. HIV prevalence in Homa Bay is nearly 4.5 times higher than the national prevalence at 26.0%. The county contributed 15.1% and 14.0 % of the total new HIV infections in Kenya among children and adults respectively.
+          </p>
+            </p>
+            <h5>SEXUAL AND GENDER-BASED VIOLENCE</h5>
+            <p>
+                according to Kenya Violence against Children Survey (KVACS) 2010, violence against children is a serious problem in Kenya. Levels of violence prior to age 18 as reported by 18 to 24 year olds (lifetime experiences) indicate that during childhood: 32% of females and 18% of male’s experience sexual violence. Current levels of violence reported by 13 to 17 year olds indicated that 11% of females and 4% of males experienced sexual violence. In Misita where we work, Harmful cultural practices such as child marriages, forced marriages, forced widow inheritance, and ritual killings amongst others are still practiced. The customs of widow cleansing and widow inheritance are practiced in several communities throughout sub-Saharan Africa. In the Nyanza Province of Kenya, according to Luo tradition, widows are expected to engage in sexual intercourse with a “cleanser,” without the use of a condom, in order to remove the impurity ascribed to her after her husband's death. Luo couples, including widows, are also expected to engage in sex preceding specific agricultural activities, building homes, funerals, weddings, and other significant cultural and social events. 
+            </p>
+
+            
+          </div>
+          
+            <!-- <ul>
+              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequa</li>
+              <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
+              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</li>
+            </ul>
+            <p class="fst-italic">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p> -->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Our Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container">
+
+        <div class="" data-aos="fade-left">
+          
+            <p>
+            </p>
+            
+        
+        <!-- </div>
+        <div class="" data-aos="fade-left"> -->
+            
+            <h5>ADOLESCENT PREGNANCIES </h5>
+            <p>
+                The teen pregnancies in Homa bay county where AKI Charities work stand at 23.2 per cent. This is much higher compared to the national prevalence which is 14.8 per cent. the reports also confirm that One in every five adolescents’ girls aged 15-19 are already mothers or pregnant with their first child. (KDHS,2014). Additionally, the adolescent is also faced with triple threat.
+                <h6>Approach</h6>
+                At AKI Charities, we are committed to organize the adolescents (both boys and girls) into health discussion forums for ease in SRHR information dissemination and experience sharing among the peers. We introduced topics for discussion that are happening in the society but due to cultural issues, it not openly being discussed but in the real situation it negatively affects the society. we refer them as elephant in the room topics.
+                As way of villages to view the other side of the coin of life beyond own village experiences, we Connect rural villages to others through various initiatives. We organize for either physical or virtual forums, we encourage diverse professional locally, regionally and globally to counter community experience as the community learn from both sides. 
+                <p>
+                    <h6>Oral health</h6> <p> We anticipate to create awareness regarding oral disease and promote preventive behaviors in schoolchildren, a current perspective on their oral health situation must first be obtained. We intend to be Practicing good dental care from infancy to adulthood can help a person keep their teeth and gums healthy. Brushing and flossing daily, not smoking, eating a healthful diet, and having regular dental checkups can help people avoid cavities, gum disease, and other dental issues. It may also benefit their overall health. A child’s primary teeth, which people sometimes call baby teeth, are just as important as their permanent teeth. Baby teeth help a child chew and speak. 
+                    </p>
+                    They are placeholders for the future permanent teeth. If a child loses a baby tooth to decay, this can disrupt the space in the mouth and make it difficult for the adult tooth to develop correctly. With this in mind, it is best to introduce good dental care for children during infancy. The following practices will help keep a child’s teeth and gums healthy: Wipe a baby’s gums with a warm, wet washcloth every day, even before they have any teeth. Doing this removes sugars from the gums and can help a baby become familiar with the feeling of cleaning their teeth. Babies and toddlers should not go to bed with bottles or Sippy cups. Milk and juice contain sugars that can cause tooth decay if they remain on the teeth for extended periods. As a baby approaches 1 year of age, start getting them used to a sippy cup. Aim to stop using bottles by their first birthday.
+                    </p>
+                    <p>
+                    Allow toddlers to sip water from sippy cups between meals, but save juice or milk for meal times only. Once a baby has teeth, brush them twice a day with a soft baby toothbrush. Use a tiny amount of fluoride toothpaste, no bigger than a grain of rice. Children who are 3 to 6 years of age may use a pea-sized amount of toothpaste.
+                    </p><p>
+                    Parents or caregivers should brush the child’s teeth for them until they can clean all of their teeth thoroughly without help. Monitor them to make sure that they spit out the toothpaste. Keep the toothpaste out of children’s reach when it is not in use.
+                    </p>
+                    <p>
+                    The ADA recommend that children see a dentist within 6 months of their first tooth appearing or at 1 year of age, whichever comes first. Parents and caregivers should not share eating utensils with a child or clean pacifiers by putting them in their mouth. Both of these actions can pass the adult’s cavity-causing bacteria to the child.
+                    </p>
+                
+            </p>
+        </div>
+  
+
+        <!-- <div class="row">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up">
+              <div class="member-img">
+                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Walter White</h4>
+                <span>Chief Executive Officer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Product Manager</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="200">
+              <div class="member-img">
+                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>William Anderson</h4>
+                <span>CTO</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="member-img">
+                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Amanda Jepson</h4>
+                <span>Accountant</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>End Our Team Section -->
+
+    <!-- ======= Our Skills Section ======= -->
+    <!-- <section id="skills" class="skills">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Our <strong>Skills</strong></h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6" data-aos="fade-up">
+
+            <div class="progress">
+              <span class="skill">HTML <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">CSS <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">JavaScript <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="progress">
+              <span class="skill">PHP <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">WordPress/CMS <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Photoshop <i class="val">55%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section> -->
+    <!-- End Our Skills Section -->
+
+    <!-- ======= Our Clients Section ======= -->
+    <!-- <section id="clients" class="clients">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Clients</h2>
+        </div>
+
+        <div class="row no-gutters clients-wrap clearfix" data-aos="fade-up">
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="assets/img/clients/client-1.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="assets/img/clients/client-2.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="assets/img/clients/client-7.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="assets/img/clients/client-8.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>End Our Clients Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>AKI Charity Kenya</h3>
+            <p>
+              P.O.Box  <br>
+             40100<br>
+             Kisumu, Kenya <br><br>
+              <strong>Phone:</strong> +254 793 055 051<br>
+              <strong>Email:</strong> info@akikenya.org<br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'index' %}">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'about' %}">About us</a></li>
+              <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li> -->
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Projects</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i><a href="{% url 'education' %}">Education and transformation</a></li>
+                  <li><i class="bx bx-chevron-right"></i><a href="{% url 'health' %}">Health and social change</a></li>
+                  <li><i class="bx bx-chevron-right"></i><a href="{% url 'economic' %}">Economic strengthing</a></li>
+                  <li><i class="bx bx-chevron-right"></i><a href="{% url 'conflict' %}">Conflict Management</a></li>
+                  <li><i class="bx bx-chevron-right"></i><a href="{% url 'climate' %}">Climate Justice Advocacy</a></li>
+                  <li><i class="bx bx-chevron-right"></i><a href="{% url 'partnerships' %}">Partnerships and Voluntarism</a></li>
+              <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li> -->
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Join Our Newsletter</h4>
+            <p>Our News letter program is comming soon</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <!-- <div class="copyright">
+          &copy; Copyright <strong><span>Company</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits"> -->
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/company-free-html-bootstrap-template/ -->
+          <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/waypoints/noframework.waypoints.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>
