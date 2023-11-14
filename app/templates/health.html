@@ -30,6 +30,20 @@
 
   <!-- Template Main CSS File -->
   <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+  <style>
+    .logo a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+    }
+
+    .top-row, .bottom-row {
+      display: inline-block !important; 
+      vertical-align: middle !important;
+      /* width: 20px; */
+    }
+  </style>
 
   <!-- =======================================================
   * Template Name: Company
@@ -46,7 +60,13 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><a href="{% url 'index' %}"><span>AKI</span> Charity Kenya</a></h1>
+      <h1 class="logo me-auto">
+        <a href="{% url 'index' %}">
+          <span class="top-row"> <img src="{% static 'assets/img/local/logo.jpeg' %}" alt="Acorn Kids International Charities (AKIC-Kenya) Logo" style="max-width: 500em;">
+            AKIC-Kenya</span>
+            <!-- <span class="bottom-row">AKIC-Kenya</span> -->
+        </a>
+       </h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -76,7 +96,7 @@
           <!-- <li><a href="portfolio.html">Portfolio</a></li> -->
           <!-- <li><a href="pricing.html">Pricing</a></li> -->
           <li><a href="{% url 'blog' %}">Blog</a></li>
-          <li><a href="{% url 'contact' %}">Contact</a></li>
+          <li><a href="{% url 'contact' %}">Contact Us</a></li>
 
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -123,12 +143,12 @@
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-right">
             <p>
-                AKI Charities is committed to partner with other institutions in ending AIDS as a public health threat and addressing all forms of Sexual and Gender- Based Violence (SGBV). In addition, the organization is determined to address the challenge of adolescent pregnancies in the areas of operation. Through partnership with government entities, and other bodies to develop AKI Charities shall implement strategies for eliminating the triple threat; sexual gender-based violence, pregnancies and HIV among adolescents and young people.
+                AKI Charities is committed to partner with other institutions in ending AIDS as a public health threat and addressing all forms of Sexual and Gender- Based Violence (SGBV). In addition, we are  determined to address the challenges of adolescent pregnancies in the areas of operation. Through partnership with government entities, and like minded partners, we implement strategies for eliminating the triple threats; sexual gender-based violence, pregnancies and HIV among adolescents and young people.
 
               </p>
               <h5>HIV/AIDS</h5>
           <p>
-            Globally, HIV is among the leading causes of death among adolescents. it remains a major public health threat for adolescents and young people in Kenya. Misita village one of villages in homabay county. HIV prevalence in Homa Bay is nearly 4.5 times higher than the national prevalence at 26.0%. The county contributed 15.1% and 14.0 % of the total new HIV infections in Kenya among children and adults respectively.
+            Globally, HIV is among the leading causes of death among adolescents. It remains a major public health threat for adolescents and young people in Kenya. Misita village one of villages in <H1></H1>omabay county. HIV prevalence in Homa Bay is nearly 4.5 times higher than the national prevalence at 26.0%. The county contributed 15.1% and 14.0 % of the total new HIV infections in Kenya among children and adults respectively.
           </p>
             </p>
             <h5>SEXUAL AND GENDER-BASED VIOLENCE</h5>
@@ -171,8 +191,8 @@
             <p>
                 The teen pregnancies in Homa bay county where AKI Charities work stand at 23.2 per cent. This is much higher compared to the national prevalence which is 14.8 per cent. the reports also confirm that One in every five adolescents’ girls aged 15-19 are already mothers or pregnant with their first child. (KDHS,2014). Additionally, the adolescent is also faced with triple threat.
                 <h6>Approach</h6>
-                At AKI Charities, we are committed to organize the adolescents (both boys and girls) into health discussion forums for ease in SRHR information dissemination and experience sharing among the peers. We introduced topics for discussion that are happening in the society but due to cultural issues, it not openly being discussed but in the real situation it negatively affects the society. we refer them as elephant in the room topics.
-                As way of villages to view the other side of the coin of life beyond own village experiences, we Connect rural villages to others through various initiatives. We organize for either physical or virtual forums, we encourage diverse professional locally, regionally and globally to counter community experience as the community learn from both sides. 
+                At AKI Charities, we are  organize the adolescents (both boys and girls) into health discussion forums for ease of cascafe of SRHR information dissemination and experience sharing among the peers. We introduced topics for discussion that are happening in the society but due to cultural issues, it not openly being discussed but in the real situation it negatively affects the society. we refer them as elephant in the room topics.
+                As way of villages to view the other side of the coin of life beyond own village experiences, we <!--  -->onnect rural villages to others through various initiatives. We organize for either physical or virtual forums, we encourage diverse professional locally, regionally and globally to counter community experience as the community learn from both sides. 
                 <p>
                     <h6>Oral health</h6> <p> We anticipate to create awareness regarding oral disease and promote preventive behaviors in schoolchildren, a current perspective on their oral health situation must first be obtained. We intend to be Practicing good dental care from infancy to adulthood can help a person keep their teeth and gums healthy. Brushing and flossing daily, not smoking, eating a healthful diet, and having regular dental checkups can help people avoid cavities, gum disease, and other dental issues. It may also benefit their overall health. A child’s primary teeth, which people sometimes call baby teeth, are just as important as their permanent teeth. Baby teeth help a child chew and speak. 
                     </p>
@@ -410,7 +430,7 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>AKI Charity Kenya</h3>
+            <h3> AKIC-Kenya</h3>
             <p>
               P.O.Box  <br>
              40100<br>

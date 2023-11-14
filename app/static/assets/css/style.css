@@ -13,6 +13,18 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #4d4643;
 }
+.logo a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.top-row, .bottom-row {
+display: inline-block !important; 
+vertical-align: middle !important;
+/* width: 20px; */
+}
 
 a {
   color: #1bbd36;
@@ -31,6 +43,17 @@ h4,
 h5,
 h6 {
   font-family: "Roboto", sans-serif;
+}
+/* CSS to align the text in the top row with the text in the second row */
+.logo a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-row, .bottom-row {
+  display: inline-block !important; 
+  vertical-align: middle !important;
 }
 
 /*--------------------------------------------------------------
@@ -105,7 +128,7 @@ h6 {
 }
 
 #header .logo img {
-  max-height: 40px;
+  max-height: 52px !important;
 }
 
 /*--------------------------------------------------------------
@@ -129,7 +152,7 @@ h6 {
 }
 
 .header-social-links a:hover {
-  color: #1bbd36;
+  /* color: #1bbd36; */
 }
 
 @media (max-width: 768px) {

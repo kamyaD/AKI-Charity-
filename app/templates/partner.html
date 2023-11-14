@@ -11,8 +11,15 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+  <link rel="apple-touch-icon" sizes="180x180" href="{% static 'asseets/img/local/favicon_package_v0.16/apple-touch-icon.png'%}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{% static 'asseets/img/local/favicon_package_v0.16/favicon-32x32.png' %}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{% static 'asseets/img/local/favicon_package_v0.16/favicon-16x16.png' %}">
+  <link rel="manifest" href="{% static 'asseets/img/local/favicon_package_v0.16/site.webmanifest' %}">
+  <link rel="mask-icon" href="{% static 'asseets/img/local/favicon_package_v0.16/safari-pinned-tab.svg' %}" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -30,6 +37,20 @@
 
   <!-- Template Main CSS File -->
   <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+  <style>
+    .logo a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+    }
+
+    .top-row, .bottom-row {
+      display: inline-block !important; 
+      vertical-align: middle !important;
+      /* width: 20px; */
+    }
+  </style>
 
   <!-- =======================================================
   * Template Name: Company
@@ -46,7 +67,13 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><a href="{% url 'index' %}"><span>AKI</span> Charity Kenya</a></h1>
+      <h1 class="logo me-auto">
+        <a href="{% url 'index' %}">
+          <span class="top-row"> <img src="{% static 'assets/img/local/logo.jpeg' %}" alt="Acorn Kids International Charities (AKIC-Kenya) Logo" style="max-width: 500em;">
+            AKIC-Kenya</span>
+            <!-- <span class="bottom-row">AKIC-Kenya</span> -->
+        </a>
+       </h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -75,8 +102,8 @@
           <!-- <li><a href="{% url 'services' %}">Services</a></li> -->
           <!-- <li><a href="portfolio.html">Portfolio</a></li> -->
           <!-- <li><a href="pricing.html">Pricing</a></li> -->
-          <!-- <li><a href="{% url 'blog' %}">Blog</a></li> -->
-          <li><a href="{% url 'contact' %}">Contact</a></li>
+          <li><a href="{% url 'blog' %}">Blog</a></li>
+          <li><a href="{% url 'contact' %}">Contact Us</a></li>
 
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -119,7 +146,7 @@
             <!-- <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assum perenda sruen jonee trave</h3> -->
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
-            <img src="{% static 'assets/img/local/edit25.jpg' %}" alt="Image 1" style="max-width: 100%;">
+            <img src="{% static 'assets/img/local/partner.jpeg' %}" alt="Image 1" style="max-width: 100%;">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-right">
             <p>
@@ -373,7 +400,7 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>AKI Charity Kenya</h3>
+            <h3> AKIC-Kenya</h3>
             <p>
               P.O.Box  <br>
              40100<br>
